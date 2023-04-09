@@ -1,0 +1,19 @@
+{
+  "name": "Translate",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs", "cookies", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["*://*.facebook.com/"]
+}

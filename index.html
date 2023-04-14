@@ -2,42 +2,49 @@
 <html lang="en">
   <head>
     <title>Translate</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
   <body>
-    <!-- <h1 id="cookie1">cookies</h1>
-    <button id="getAccessToken">Get Access Token</button>
-    <ul id="cookie-list"></ul>
-    <div id="access-token">AccessToken</div> -->
-    <div class="header">Translate</div>
-    <div class="language-switch">
-      <div class="left-side">
-        <div class="select-language">
-          <select name="lang-b" id="lang-a">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
+    <div class="container text-center p-4 h-100">
+      <div class="row align-items-start w-100 m-0 tranlate-section">
+        <div class="col w-50 m-0 h-100">
+          <div class="input-group p-0 h-100 tranlate-content">
+            <span class="input-group-text span-des">Nhập văn bản</span>
+            <textarea
+              id="text-input"
+              class="form-control input-base"
+              aria-label="With textarea"
+              draggable="false"
+              autofocus
+            ></textarea>
+          </div>
+        </div>
+        <div class="col w-50 m-0 h-100">
+          <div class="input-group p-0 h-100 tranlate-content">
+            <span class="input-group-text span-des">Bản dịch</span>
+            <textarea
+              id="text-translated"
+              class="form-control input-base"
+              aria-label="With textarea"
+              readonly
+              draggable="false"
+              disabled
+            ></textarea>
+          </div>
         </div>
       </div>
-      <img src="./assets/translator.png" alt="" class="switch-icon" />
-      <div class="right-side">
-        <div class="select-language">
-          <select name="lang-b" id="lang-b">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-          </select>
-        </div>
-      </div>
+
+      <button
+        id="tranlate-btn"
+        type="button "
+        class="btn btn-primary mt-4 w-100 btn-lg"
+      >
+        Dịch
+      </button>
     </div>
-    <br />
-    <form action="">
-      <label for="fname"></label>
-      <input type="text" id="fname" name="fname" /><br /><br />
-    </form>
-    <script src="tranlate.js"></script>
+
+    <script src="js/tranlate.js"></script>
   </body>
 </html>

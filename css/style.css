@@ -1,0 +1,35 @@
+body {
+  width: 600px;
+  height: 400px;
+}
+textarea {
+  width: 100%;
+}
+.span-des {
+  min-width: 125px;
+  border-radius: 0;
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tranlate-section {
+  height: 80%;
+}
+.tranlate-content {
+  flex-direction: column;
+}
+.input-base {
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  resize: none;
+}
+.input-base:focus {
+  outline: none !important;
+  border-color: #dee2e6;
+  box-shadow: none;
+}

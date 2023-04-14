@@ -1,15 +1,17 @@
 {
   "name": "Translate",
+  "description": "Translate extension",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["tabs", "cookies", "activeTab", "scripting"],
+  "permissions": ["tabs", "activeTab"],
   "action": {
     "default_popup": "index.html"
   },
   "content_scripts": [
     {
+      "run_at": "document_start",
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["js/content.js"]
     }
   ],
   "background": {

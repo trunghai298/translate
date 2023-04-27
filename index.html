@@ -6,12 +6,34 @@
     <link rel="stylesheet" href="/css/style.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
+
   <body>
-    <div class="container text-center p-4 h-100">
+    <div class="container-md text-center p-4 h-100">
+      <p class="h5">Translator</p>
+      <div class="w-100 m-0 lan-box">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <select
+              id="input-language"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option value="auto-detect">Auto detect</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <select
+              id="output-language"
+              class="form-select"
+              aria-label="Default select example"
+            ></select>
+          </div>
+        </div>
+      </div>
       <div class="row align-items-start w-100 m-0 tranlate-section">
         <div class="col w-50 m-0 h-100">
           <div class="input-group p-0 h-100 tranlate-content">
-            <span class="input-group-text span-des">Nhập văn bản</span>
+            <span class="input-group-text span-des">Enter text</span>
             <textarea
               id="text-input"
               class="form-control input-base"
@@ -23,7 +45,7 @@
         </div>
         <div class="col w-50 m-0 h-100">
           <div class="input-group p-0 h-100 tranlate-content">
-            <span class="input-group-text span-des">Bản dịch</span>
+            <span class="input-group-text span-des">Translation</span>
             <textarea
               id="text-translated"
               class="form-control input-base"
@@ -35,14 +57,6 @@
           </div>
         </div>
       </div>
-
-      <button
-        id="tranlate-btn"
-        type="button "
-        class="btn btn-primary mt-4 w-100 btn-lg"
-      >
-        Dịch
-      </button>
     </div>
 
     <script src="js/tranlate.js"></script>

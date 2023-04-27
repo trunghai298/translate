@@ -1,6 +1,6 @@
 body {
   width: 600px;
-  height: 400px;
+  height: 500px;
 }
 textarea {
   width: 100%;
@@ -32,4 +32,7 @@ textarea {
   outline: none !important;
   border-color: #dee2e6;
   box-shadow: none;
+}
+.lan-box {
+  padding: calc(var(--bs-gutter-x) * 0.5);
 }
